@@ -77,6 +77,7 @@ a{
     touch-action: manipulation;
   }
   
+  
   .button-85:before {
     content: "";
     background: linear-gradient(
@@ -150,49 +151,4 @@ a{
     border-radius: 7px;
     margin-bottom: 15px;
     font-size: 10px;
-}
-
-/* filepath: /c:/Users/kon04/Downloads/project-20250128T143359Z-001/project.html/project/css/style.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.navbar {
-  grid-template-columns: 1fr 2fr;
-}
-
-.navbar-menu {
-  padding: 10px;
-  display: block;
-}
-
-@media (min-width: 600px) {
-  .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .grid-container {
-      grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid-container {
-      grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }

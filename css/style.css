@@ -7,9 +7,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
 }
 
 .grid-item {
@@ -44,10 +41,6 @@ body{
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 a{
@@ -59,9 +52,6 @@ a{
     padding-right: 10px;
     font-size: 20px;
     color: rgb(26, 117, 236);
-    margin: 10px;
-    text-decoration: none;
-    font-size: 18px;
 }
 
 .navbar-menu:hover{
@@ -162,26 +152,47 @@ a{
     font-size: 10px;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-      text-align: center;
-  }
+/* filepath: /c:/Users/kon04/Downloads/project-20250128T143359Z-001/project.html/project/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.navbar {
+  grid-template-columns: 1fr 2fr;
+}
+
+.navbar-menu {
+  padding: 10px;
+  display: block;
+}
+
+@media (min-width: 600px) {
   .grid-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .grid-item img {
-      width: 100%;
-      max-width: 300px;
+@media (min-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .button-85 {
-      width: 100%;
-      font-size: 16px;
-      padding: 12px;
+@media (min-width: 1024px) {
+  .grid-container {
+      grid-template-columns: repeat(4, 1fr);
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
